@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMaximize } from "@fortawesome/free-solid-svg-icons";
+import { faMaximize,faMinimize } from "@fortawesome/free-solid-svg-icons";
 
 const Preview = ({
   content,
@@ -17,7 +17,7 @@ const Preview = ({
       <div className="toolbar d-flex justify-content-between px-1">
         <h4 className="titleColor ms-2 my-2 fw-bold">Preview</h4>
         <button onClick={handlePreviewToggle} className="btn my-1">
-          <FontAwesomeIcon className="iconColor" icon={faMaximize} />
+          <FontAwesomeIcon className="iconColor" icon={isPreviewVisible? faMinimize : faMaximize} />
         </button>
       </div>
       <div id="preview" className="container">

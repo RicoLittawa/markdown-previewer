@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMaximize } from "@fortawesome/free-solid-svg-icons";
+import { faMaximize, faMinimize } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { marked } from "marked"; // Import specific member(s) from 'marked'
 
@@ -35,7 +35,7 @@ const Editor = ({
       <div className="toolbar d-flex justify-content-between px-1">
         <h4 className="titleColor ms-2 my-2 fw-bold">Editor</h4>
         <button onClick={handleEditorToggle} className="btn my-1">
-          <FontAwesomeIcon className="iconColor" icon={faMaximize} />
+          <FontAwesomeIcon className="iconColor" icon={maximize? faMinimize : faMaximize} />
         </button>
       </div>
       <textarea
