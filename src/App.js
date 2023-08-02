@@ -52,7 +52,7 @@ And here. | Okay. | I think we get it.
 
   return (
     <div className="App">
-      <div className="container" style={{ width: 500 }}>
+      <div className="container container-fluid">
         <Editor
           content={content}
           setContent={setContent}
@@ -60,8 +60,6 @@ And here. | Okay. | I think we get it.
           isEditorVisible={isEditorVisible}
           setEditorVisible={setEditorVisible}
         />
-      </div>
-      <div className="container" style={{ width: 800, height: "auto" }}>
         <Preview
           content={content}
           isEditorVisible={isEditorVisible}
